@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #a12e5c;
+  font-family: 'Staatliches', cursive;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.coin-card {
+  width: auto;
+  background: #e64683;
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+.top-card {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-details {
+  margin-left: auto;
+  position: relative;
+  bottom: 55px;
+  right: 20px;
+  font-size: 1.5em;
+}
+
+.coin-card-title {
+  text-align: center;
+}
+
+.card-picture {
+  height: 100px;
+  margin: auto;
+  margin-bottom: 40px;
+  /* filter: invert(30%) sepia(48%) saturate(1025%) hue-rotate(289deg) brightness(99%) contrast(96%); */
+}
+
+.red-bg:hover {
+  background-color: rgba(204, 21, 21, 0.336);
+}
+
+.green-bg:hover {
+  background-color: rgba(19, 224, 46, 0.527);
+}

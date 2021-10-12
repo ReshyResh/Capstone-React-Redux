@@ -1,0 +1,91 @@
+.details-top {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    height: 200px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    width: 90%;
+    border-radius: 5px;
+    background: #e64683;
+}
+
+.white {
+    color: #fff;
+}
+
+.align-vertically {
+    margin: auto 0 auto 0;
+}
+
+.image-details {
+    height: 100px;
+}
+
+.top-bar-details {
+    display: flex;
+    flex-flow: row;
+    margin-top: 30px;
+}
+
+.details-title {
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+}
+
+.arrow-left {
+    font-size: 2em;
+    margin-left: 30px;
+}
+
+.stats-graph {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.separator {
+    width: 80%;
+    color: rgba(12, 12, 12, 0.1);
+}
+
+.stats-list {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.stats-list > li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #e64683;
+    padding: 20px 0 20px 0;
+    font-size: 1.5em;
+    color: rgb(214, 214, 214);
+}
+
+.stats-list > li:nth-child(odd) {
+    background: #752143;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.coin-details-title {
+    margin-left: 30px;
+}
+
+.coin-details-value {
+    margin-right: 30px;
+}
