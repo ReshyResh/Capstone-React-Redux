@@ -6,19 +6,31 @@ import Graph from "./Graph";
 import { Route, Switch, useRouteMatch } from "react-router";
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import CoinStats from "./CoinStats";
+import { useEffect } from "react";
 
 const CoinPage = ({ match }) => {
     const coins = useSelector((state) => state.coinReducer.coins);
     const toShowBlob = coins.filter((coin) => coin.symbol === match.params.symbol);
     const index = coins.indexOf(toShowBlob[0])
-    console.log(index);
     const toShow = toShowBlob[0];
     let { path, url } = useRouteMatch();
+    useEffect(() => {
+        const parent = document.getElementById('main-page');
+        parent.classList.replace('invisible','visible');
+      }, []);
+    const clickAnim = (side) => {
+        const parent = document.getElementById('main-page');
+        parent.classList.remove('back-to-middle');
+        parent.classList.add(`to-the-${side}`);
+        setTimeout(() => {
+            parent.classList.replace(`to-the-${side}`,'back-to-middle')
+        }, 200);
+      };
     return (
-            <div>
+            <div id="main-page" className="invisible">
                 <div className="bottom-page">
-                    {index > 0 ? (<Link to={`/coin/${coins[index-1].symbol}`}><span className="button-next-prev">PREV COIN</span></Link>) : null }
-                    {index < coins.length-1 ? (<Link to={`/coin/${coins[index+1].symbol}`}><span className="button-next-prev">NEXT COIN</span></Link>) : null }
+                    {index > 0 ? (<Link to={`/coin/${coins[index-1].symbol}`}><span onClick={() => clickAnim('left')} className="button-next-prev">PREV COIN</span></Link>) : null }
+                    {index < coins.length-1 ? (<Link to={`/coin/${coins[index+1].symbol}`}><span onClick={() => clickAnim('right')} className="button-next-prev">NEXT COIN</span></Link>) : null }
                 </div>
                 
             <div className = "top-bar-details">
