@@ -60,3 +60,41 @@ a {
 .green-bg:hover {
   background-color: rgba(0, 255, 34, 0.527);
 }
+
+.intro {
+  height: 300px;
+  width: 97%;
+  margin: 10px auto 0px auto;
+  background: #e64683;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.intro > h1, h3 {
+  text-align: center;
+  z-index: 99;
+}
+
+.intro > h3 {
+  font-size: 1.5em;
+}
+
+.sort-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sort-button {
+  height: 40px;
+  z-index: 99;
+  width: 100px;
+  outline: none;
+  border: none;
+  margin: 0 10px 0 10px;
+  font-family: 'Staatliches', cursive;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.1em;
+}

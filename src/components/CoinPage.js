@@ -23,6 +23,10 @@ const CoinPage = ({ match }) => {
         parent.classList.remove('back-to-middle');
         parent.classList.add(`to-the-${side}`);
         setTimeout(() => {
+            document.getElementById('stats-button').focus();
+            document.getElementById('stats-button').click();
+        }, 1);
+        setTimeout(() => {
             parent.classList.replace(`to-the-${side}`,'back-to-middle')
         }, 200);
       };
@@ -47,7 +51,7 @@ const CoinPage = ({ match }) => {
             </div>
             <div className="stats-graph">
             <NavLink
-            activeClassName="active-link" className="menu-item"
+            activeClassName="active-link" className="menu-item" id="stats-button"
               to={`${url}`} exact>24HR STATS
             </NavLink>
             <NavLink

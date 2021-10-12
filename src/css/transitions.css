@@ -22,6 +22,14 @@
   height: 96vh;
 }
 
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
 .invisible {
   visibility: hidden;
   opacity: 0;
@@ -37,14 +45,49 @@
 .to-the-left {
     transform: translateY(-2000px);
     opacity: 0;
+    visibility: hidden;
 }
 
 .to-the-right {
     transform: translateY(2000px);
     opacity: 0;
+    visibility: hidden;
 }
 
 .back-to-middle {
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1;
+    visibility: visible;
 }
+
+#tr-1, #tr-2 #tr-3 {
+    transform: translateY(-1px);
+}
+
+#frame1 {
+    fill: rgba(170, 170, 170, 0);
+    transition: all 1s;
+    fill-opacity: 0;
+    position: absolute;
+    z-index: 0;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 200px;
+    top: 115px;
+    transform: translateY(-1px)
+}
+
+#gainers-button:hover ~ #frame1 {
+    fill: green;
+    fill-opacity: 1;
+    transform: scale(2.5);
+}
+
+#losers-button:hover ~ #frame1 {
+    fill: rgba(212, 44, 44, 0.836);
+    fill-opacity: 1;
+    transform: scale(2.5) rotate(180deg);
+}
+

@@ -1,10 +1,7 @@
 import React from 'react'
-import { useSelector } from "react-redux";
-import { Link } from 'react-router-dom';
 
 const CoinStats = (props) => {
-    const { coin, index } = props;
-    const coins = useSelector((state) => state.coinReducer.coins);
+    const { coin } = props;
     return (
         <>
           <ul className="stats-list">
@@ -55,7 +52,6 @@ const CoinStats = (props) => {
             <span className="coin-details-value">{Number(coin.volume)}</span>
             </li>
         </ul>
-        {/* <Link to={`/coin/${coins[index+1].symbol}`}><span className="arrow-left">NEXT COIN</span></Link> */}
       </>
       
     );
