@@ -10,7 +10,7 @@ const LineChart = (props) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchGraph(coin.symbol));
-  }, []);
+  }, [coin.symbol,dispatch]);
   const stats = useSelector((state) => state.graphReducer.stats);
   const loading = useSelector((state) => state.graphReducer.loading);
   const data = {
@@ -63,10 +63,6 @@ const LineChart = (props) => {
   return (
     <>
     {loading ? <Spinner /> : null}
-      <div className="header">
-        <h1 className="title"></h1>
-        <div className="links"></div>
-      </div>
       <Line data={data} options={options} />
     </>
   );

@@ -5,7 +5,7 @@ import { useState } from "react";
 const TopBar = () => {
     
     const coins = useSelector((state) => state.coinReducer.coins);
-    const gainers = coins.filter((coin) => coin.priceChangePercent > 0);
+    const gainers = coins.filter((coin) => coin.priceChangePercent > 5);
     const losers = coins.filter((coin) => coin.priceChangePercent < -10);
     gainers.sort((a,b) => (a.priceChangePercent > b.priceChangePercent) ? 1 : ((b.priceChangePercent > a.priceChangePercent) ? -1 : 0));
     losers.sort((a,b) => (a.priceChangePercent < b.priceChangePercent) ? 1 : -1)

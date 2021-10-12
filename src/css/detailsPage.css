@@ -6,8 +6,12 @@
     text-align: center;
     margin: 20px auto 20px auto;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 30px;
     background: #e64683;
+}
+
+canvas {
+    margin-top: 50px;
 }
 
 .white {
@@ -32,6 +36,7 @@
     text-align: center;
     margin: auto;
     font-size: 2em;
+    padding-right: 40px;
 }
 
 .arrow-left {
@@ -102,4 +107,27 @@
 
 .active-link {
     background: linear-gradient(#d2cf1a, #0000);
+}
+
+.bottom-page {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.button-next-prev {
+    border: 1px solid rgba(12, 12, 12, 0.349);
+    font-size: 1.5em;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    background: #e64683;
+    border-radius: 10px;
 }

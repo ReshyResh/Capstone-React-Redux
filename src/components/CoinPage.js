@@ -10,10 +10,17 @@ import CoinStats from "./CoinStats";
 const CoinPage = ({ match }) => {
     const coins = useSelector((state) => state.coinReducer.coins);
     const toShowBlob = coins.filter((coin) => coin.symbol === match.params.symbol);
+    const index = coins.indexOf(toShowBlob[0])
+    console.log(index);
     const toShow = toShowBlob[0];
     let { path, url } = useRouteMatch();
     return (
             <div>
+                <div className="bottom-page">
+                    {index > 0 ? (<Link to={`/coin/${coins[index-1].symbol}`}><span className="button-next-prev">PREV COIN</span></Link>) : null }
+                    {index < coins.length-1 ? (<Link to={`/coin/${coins[index+1].symbol}`}><span className="button-next-prev">NEXT COIN</span></Link>) : null }
+                </div>
+                
             <div className = "top-bar-details">
                 <Link to='/'><span className="arrow-left"><FaChevronLeft /></span></Link>
                 <h3 className="details-title white">{toShow.symbol}</h3>
@@ -39,7 +46,8 @@ const CoinPage = ({ match }) => {
                 
                 <Switch>
                     <Route exact path={path}>
-                        <CoinStats coin = {toShow}/>
+                        <CoinStats coin = {toShow} index= {index}/>
+                        
                     </Route>
                     <Route exact path={`${path}/graph`}>
                         <Graph coin = {toShow}/>

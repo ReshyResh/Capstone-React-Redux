@@ -54,11 +54,11 @@ a {
 }
 
 .red-bg:hover {
-  background-color: rgba(204, 21, 21, 0.336);
+  background-color: rgba(235, 45, 45, 0.589);
 }
 
 .green-bg:hover {
-  background-color: rgba(19, 224, 46, 0.527);
+  background-color: rgba(0, 255, 34, 0.527);
 }
 
 .spinner-container {
