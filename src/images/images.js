@@ -29,7 +29,78 @@ const check = (coin) => {
         return 'https://s2.coinmarketcap.com/static/img/coins/200x200/1720.png'
       case 'XLMUSDT':
         return 'https://s2.coinmarketcap.com/static/img/coins/200x200/512.png'
-
+      case 'ONTUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2566.png'
+      case 'TRXUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/1958.png'
+      case 'ETCUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/1321.png'
+      case 'ICXUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2099.png'
+      case 'NULSUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2092.png'
+      case 'VETUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3077.png'
+      case 'USDCUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3408.png'
+      case 'WAVESUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/1274.png'
+      case 'BTTUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3718.png'
+      case 'ONGUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3217.png'
+      case 'HOTUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2682.png'
+      case 'ZILUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2469.png'
+      case 'ZRXUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/1896.png'
+      case 'FETUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3773.png'
+      case 'BATUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/1697.png'
+      case 'XMRUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/328.png'
+      case 'ZECUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/1437.png'
+      case 'IOSTUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2405.png'
+      case 'CELRUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3814.png'
+      case 'DASHUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/131.png'
+      case 'NANOUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/1567.png'
+      case 'OMGUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/1808.png'
+      case 'THETAUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2416.png'
+      case 'ENJUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2130.png'
+      case 'MITHUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2608.png'
+      case 'MATICUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png'
+      case 'ATOMUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3794.png'
+      case 'TFUELUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3822.png'
+      case 'ONEUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3945.png'
+      case 'FTMUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3513.png'
+      case 'ALGOUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/4030.png'
+      case 'GTOUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/2289.png'
+      case 'DUSKUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/4092.png'
+      case 'ANKRUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3783.png'
+      case 'WINUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/3236.png'
+      case 'COSUSDT':
+        return 'https://s2.coinmarketcap.com/static/img/coins/200x200/4036.png'
       default:
         return 'Image not found';
     }

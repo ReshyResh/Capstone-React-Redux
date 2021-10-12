@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import images from '../images/images'
 import Graph from "./Graph";
 import { Route, Switch, useRouteMatch } from "react-router";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import CoinStats from "./CoinStats";
 
 const CoinPage = ({ match }) => {
@@ -27,8 +27,14 @@ const CoinPage = ({ match }) => {
             </h2>
             </div>
             <div className="stats-graph">
-                <Link to={`${url}`}><span className="arrow-left">24HR STATS</span></Link>
-                <Link to={`${url}/graph`}><span className="arrow-left">GRAPH</span></Link>
+            <NavLink
+            activeClassName="active-link" className="menu-item"
+              to={`${url}`} exact>24HR STATS
+            </NavLink>
+            <NavLink
+            activeClassName="active-link" className="menu-item"
+              to={`${url}/graph`} exact>GRAPH
+            </NavLink>
             </div>
                 
                 <Switch>

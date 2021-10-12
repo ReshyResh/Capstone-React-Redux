@@ -24,7 +24,6 @@ function App() {
           <Route exact path="/">
             {loading ? <Spinner /> : null}
             <TopBar />
-            <CoinCardsContainer coins = {coins} />
           </Route>
           <Route component={NotFound} />
       </Switch>
