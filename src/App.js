@@ -8,6 +8,7 @@ import CoinCardsContainer from './components/CoinCardsContainer';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CoinPage from './components/CoinPage';
 import NotFound from './components/NotFound';
+import Spinner from './components/Spinner'
 
 function App() {
   const dispatch = useDispatch();
@@ -15,11 +16,13 @@ function App() {
     dispatch(fetchPostsRequest());
   }, [dispatch]);
   const coins = useSelector((state) => state.coinReducer.coins);
+  const loading = useSelector((state) => state.coinReducer.loading);
   return (
     <BrowserRouter>
       <Switch>
           <Route exact path="/coin/:symbol" exactly component={CoinPage} />
           <Route exact path="/">
+            {loading ? <Spinner /> : null}
             <TopBar />
             <CoinCardsContainer coins = {coins} />
           </Route>

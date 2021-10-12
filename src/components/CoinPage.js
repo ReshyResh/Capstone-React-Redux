@@ -11,7 +11,6 @@ const CoinPage = ({ match }) => {
     const coins = useSelector((state) => state.coinReducer.coins);
     const toShowBlob = coins.filter((coin) => coin.symbol === match.params.symbol);
     const toShow = toShowBlob[0];
-    console.log(coins);
     let { path, url } = useRouteMatch();
     return (
             <div>
@@ -23,10 +22,9 @@ const CoinPage = ({ match }) => {
             <Router>
             <div className = "details-top">
             <img className = "image-details align-vertically" src = {images(toShow.symbol)} alt = {toShow.symbol} />
-            <h3 className="align-vertically white">
-                Hello, coin is {toShow.symbol}<br />
+            <h2 className="align-vertically white">
                 Current price: {Number(toShow.lastPrice)}
-            </h3>
+            </h2>
             </div>
             <div className="stats-graph">
                 <Link to={`${url}`}><span className="arrow-left">24HR STATS</span></Link>
@@ -38,7 +36,6 @@ const CoinPage = ({ match }) => {
                         <CoinStats coin = {toShow}/>
                     </Route>
                     <Route exact path={`${path}/graph`}>
-                        <h1>HELLO</h1>
                         <Graph coin = {toShow}/>
                     </Route>
                 </Switch>
