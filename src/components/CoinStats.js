@@ -42,12 +42,6 @@ const CoinStats = (props) => {
             <span className="coin-details-value">{Number(coin.lowPrice)}$</span>
             </li>
             <li>
-            <span className="coin-details-title">Previous close:</span>
-            <span className="coin-details-value">
-                {Number(coin.prevClosePrice)}$
-            </span>
-            </li>
-            <li>
             <span className="coin-details-title">Volume:</span>
             <span className="coin-details-value">{Number(coin.volume)}</span>
             </li>

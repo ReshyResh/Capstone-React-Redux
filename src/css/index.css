@@ -5,6 +5,7 @@ body {
   background-color: #a12e5c;
   font-family: 'Staatliches', cursive;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 a {
@@ -27,6 +28,8 @@ a {
   color: #fff;
   transition: all 0.5s;
   border-radius: 5px;
+  position: sticky;
+  z-index: 99;
 }
 
 .top-card {
@@ -44,13 +47,13 @@ a {
 
 .coin-card-title {
   text-align: center;
+  margin-top: 20px;
 }
 
 .card-picture {
   height: 100px;
   margin: auto;
   margin-bottom: 40px;
-  /* filter: invert(30%) sepia(48%) saturate(1025%) hue-rotate(289deg) brightness(99%) contrast(96%); */
 }
 
 .red-bg:hover {
@@ -97,4 +100,14 @@ a {
   cursor: pointer;
   border-radius: 10px;
   font-size: 1.1em;
+}
+
+.modal-header, .modal-footer {
+  background-color: #a12e5c;
+  color: #fff;
+}
+
+.modal-body {
+  background-color: #e64683;
+  color: #fff;
 }
