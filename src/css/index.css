@@ -13,6 +13,10 @@ a {
   color: #fff;
 }
 
+a:hover {
+  color: #fff;
+}
+
 .card-container {
   display: grid;
   grid-template-columns: auto auto;

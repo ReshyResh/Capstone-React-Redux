@@ -18,7 +18,7 @@ function ModalBS (props) {
       <Modal.Body>
         <p>
           Capstone project for the React / Redux module at <a href="http://www.microverse.org">Microverse</a>.<br />
-          The web app retrieves data from the Binance API, displaying coins and informations about them. 
+          The web app retrieves data from the Binance API, displaying coins and informations about them.<br />
           Users can sort the data received to display only the most volatile coins.<br />
           When a coin is clicked, the details page appears with more informations as well as a section with a graph of the coin's price in the past few minutes.<br /><br />
 
@@ -27,7 +27,7 @@ function ModalBS (props) {
         <Button href="https://www.linkedin.com/in/reshyresh" variant="info"><FaLinkedin />Connect with me</Button>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button style={{background: '#5b0e27', border: 'none'}} onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
   );

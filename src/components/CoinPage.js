@@ -10,13 +10,17 @@ import { useEffect } from "react";
 
 const CoinPage = ({ match }) => {
     const coins = useSelector((state) => state.coinReducer.coins);
+    console.log(coins);
     const toShowBlob = coins.filter((coin) => coin.symbol === match.params.symbol);
     const index = coins.indexOf(toShowBlob[0])
     const toShow = toShowBlob[0];
     let { path, url } = useRouteMatch();
     useEffect(() => {
         const parent = document.getElementById('main-page');
-        parent.classList.replace('invisible','visible');
+        parent.classList.add('invisible');
+        setTimeout(() => {
+            parent.classList.replace('invisible','visible')
+        }, 100);
       }, []);
     const clickAnim = (side) => {
         const parent = document.getElementById('main-page');
@@ -25,13 +29,13 @@ const CoinPage = ({ match }) => {
         setTimeout(() => {
             document.getElementById('stats-button').focus();
             document.getElementById('stats-button').click();
-        }, 1);
+        }, 100);
         setTimeout(() => {
             parent.classList.replace(`to-the-${side}`,'back-to-middle')
         }, 200);
       };
     return (
-            <div id="main-page" className="invisible">
+            <div id="main-page">
                 <div className="bottom-page">
                     {index > 0 ? (<Link to={`/coin/${coins[index-1].symbol}`}><span onClick={() => clickAnim('left')} className="button-next-prev">PREV COIN</span></Link>) : null }
                     {index < coins.length-1 ? (<Link to={`/coin/${coins[index+1].symbol}`}><span onClick={() => clickAnim('right')} className="button-next-prev">NEXT COIN</span></Link>) : null }

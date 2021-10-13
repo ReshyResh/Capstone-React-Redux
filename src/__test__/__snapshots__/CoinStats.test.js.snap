@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Coin stats render correctly 1`] = `
+<ul
+  className="stats-list"
+>
+  <li>
+    <span
+      className="coin-details-title"
+    >
+      Price Change:
+    </span>
+    <span
+      className="coin-details-value green"
+    >
+      +0.002232
+      $
+    </span>
+  </li>
+  <li>
+    <span
+      className="coin-details-title"
+    >
+      Price Change %:
+    </span>
+    <span
+      className="coin-details-value green"
+    >
+      +3.677%
+    </span>
+  </li>
+  <li>
+    <span
+      className="coin-details-title"
+    >
+      Highest price:
+    </span>
+    <span
+      className="coin-details-value"
+    >
+      0.063408
+      $
+    </span>
+  </li>
+  <li>
+    <span
+      className="coin-details-title"
+    >
+      Lowest price:
+    </span>
+    <span
+      className="coin-details-value"
+    >
+      0.059927
+      $
+    </span>
+  </li>
+  <li>
+    <span
+      className="coin-details-title"
+    >
+      Volume:
+    </span>
+    <span
+      className="coin-details-value"
+    >
+      111634.611
+    </span>
+  </li>
+</ul>
+`;

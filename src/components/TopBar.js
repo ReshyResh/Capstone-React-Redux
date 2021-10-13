@@ -36,9 +36,9 @@ const TopBar = () => {
   const infoStyle = {
     position: 'absolute',
     zIndex: '99',
-    top: '20px',
+    top: '3%',
     width: '40px',
-    right: '20px'
+    right: '4%'
   }
   return (
     <div id="top-bar">
@@ -48,7 +48,7 @@ const TopBar = () => {
       </Button>
       <ModalBS show={modalShow}
         onHide={() => setModalShow(false)} />
-        <h1> Hello, welcome to my app! </h1>
+        <h1> Hello, welcome to yet another cryptocurrency tracker! </h1>
         <h3>Sort coins by:</h3>
         <div className="sort-container">
           <button

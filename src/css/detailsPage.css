@@ -51,8 +51,10 @@ canvas {
 }
 
 .separator {
-    width: 80%;
-    color: rgba(12, 12, 12, 0.1);
+    width: 80% !important;
+    color: rgba(12, 12, 12, 0.5);
+    height: 5px !important;
+    margin: auto;
 }
 
 .stats-list {
