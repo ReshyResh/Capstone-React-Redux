@@ -58,7 +58,7 @@ exports[`Top part renders correctly 1`] = `
       </svg>
     </button>
     <h1>
-       Hello, welcome to yet another cryptocurrency tracker! 
+       Hello, welcome to my cryptocurrency tracker! 
     </h1>
     <h3>
       Sort coins by:
@@ -70,6 +70,7 @@ exports[`Top part renders correctly 1`] = `
         className="sort-button"
         id="all-button"
         onClick={[Function]}
+        type="button"
       >
          
         Show all
@@ -79,6 +80,7 @@ exports[`Top part renders correctly 1`] = `
         className="sort-button"
         id="gainers-button"
         onClick={[Function]}
+        type="button"
       >
          
         Top Gainers
@@ -88,6 +90,7 @@ exports[`Top part renders correctly 1`] = `
         className="sort-button"
         id="losers-button"
         onClick={[Function]}
+        type="button"
       >
          
         Top Losers

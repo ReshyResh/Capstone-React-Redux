@@ -1,44 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/HTML-red)
+![](https://img.shields.io/badge/JavaScript-yellow)
+![](https://img.shields.io/badge/React-blue)
+![](https://img.shields.io/badge/Redux-pink)
 
-## Available Scripts
+# Crypto Tracker
+A single page application meant to keep track of the most popular crypto currencies status.
+The user can sort the coins by highest gains or losses in the previous 24 hours, as well as click on a single coin to display more details about it. 
+The project features SVG animations, CSS animations, Dynamic graph (Made with 3rd party library [reach-chartjs2](https://www.npmjs.com/package/react-chartjs-2)), React and Redux state management, testing and also some Bootstrap components!
 
-In the project directory, you can run:
+# Built with
+  - React
+  - HTML
+  - Redux
+  - CSS
+  - Javascript
 
-### `yarn start`
+# Screenshot
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Senzanome](https://user-images.githubusercontent.com/85108160/137168593-55e097d3-a3f8-496f-b9a3-035d6a3589f7.png)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Live Demo
+### Click [here](https://reshyresh.github.io/Capstone-React-Redux/)
 
-### `yarn test`
+# Installation 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the website locally:
+  - Clone the repo by running `git clone https://github.com/ReshyResh/Capstone-React-Redux.git`.
+  - Jump to that directory by using `cd Capstone-React-Redux ` .
+  - Run `npm install` to install dependencies.
+  - Run `npm run start` to launch the live server.
 
-### `yarn build`
+# Authors 👤
+**Robert Baiesita**
+  - Github : [@ReshyResh](https://github.com/ReshyResh/)
+  - LinkedIn: [Robert Baiesita](https://www.linkedin.com/in/reshyresh/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# 🤝 Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Feel free to check the [issues page](https://github.com/ReshyResh/Capstone-Javascript-APIs/issues/).
 
-### `yarn eject`
+# Show your support
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Give a ⭐️ if you like this project!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgments
+- Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
+- This project was inspired by [Microverse](https://www.microverse.org).

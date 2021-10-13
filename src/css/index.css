@@ -71,7 +71,7 @@ a:hover {
 .intro {
   height: 300px;
   width: 97%;
-  margin: 10px auto 0px auto;
+  margin: 10px auto 0 auto;
   background: #e64683;
   display: flex;
   flex-flow: column;
@@ -79,7 +79,8 @@ a:hover {
   border-radius: 5px;
 }
 
-.intro > h1, h3 {
+.intro > h1,
+h3 {
   text-align: center;
   z-index: 99;
 }
@@ -106,7 +107,8 @@ a:hover {
   font-size: 1.1em;
 }
 
-.modal-header, .modal-footer {
+.modal-header,
+.modal-footer {
   background-color: #a12e5c;
   color: #fff;
 }
@@ -114,4 +116,10 @@ a:hover {
 .modal-body {
   background-color: #e64683;
   color: #fff;
+}
+
+@media only screen and (min-width: 1280px) {
+  .intro {
+    width: 99%;
+  }
 }

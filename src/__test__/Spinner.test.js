@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Spinner from '../components/Spinner'
+import Spinner from '../components/Spinner';
 
 it('Spinner renders correctly', () => {
   const tree = renderer

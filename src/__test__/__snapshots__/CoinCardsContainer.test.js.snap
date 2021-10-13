@@ -21,7 +21,6 @@ exports[`Coin cards container renders correctly 1`] = `
           ETHBTC
           <br />
           +3.677%
-           
         </h3>
       </div>
       <span
@@ -70,7 +69,6 @@ exports[`Coin cards container renders correctly 1`] = `
           LTCBTC
           <br />
           +1.949%
-           
         </h3>
       </div>
       <span

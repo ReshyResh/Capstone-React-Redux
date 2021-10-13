@@ -18,7 +18,6 @@ exports[`Coin card renders correctly 1`] = `
         BTCUSDT
         <br />
         +3.677%
-         
       </h3>
     </div>
     <span

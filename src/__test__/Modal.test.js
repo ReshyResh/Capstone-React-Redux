@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Modal from '../components/Modal'
+import Modal from '../components/Modal';
 
 it('Modal renders correctly', () => {
   const tree = renderer
