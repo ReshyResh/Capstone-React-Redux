@@ -1,0 +1,126 @@
+/* ----------- Loading image ------------ */
+
+.spinner-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(170, 170, 170, 0.38);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.spinner {
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* ----------- Card transitions ------------ */
+
+#main-page,
+#top-bar {
+  transition: all 0.5s;
+  height: 96vh;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.to-the-left {
+  transform: translateY(-2000px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.to-the-right {
+  transform: translateY(2000px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back-to-middle {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ----------- SVG ------------ */
+
+#tr-1,
+#tr-2,
+#tr-3,
+#star {
+  transform: none;
+  transition: all 1s;
+}
+
+#frame1,
+#frame2 {
+  fill: rgba(170, 170, 170, 0);
+  transition: all 1s;
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  top: 115px;
+  transform: scale(4);
+}
+
+#gainers-button:hover ~ #frame1 {
+  fill: green;
+  opacity: 0.7;
+  transform: scale(4);
+}
+
+#losers-button:hover ~ #frame1 {
+  fill: rgba(212, 44, 44, 0.836);
+  opacity: 1;
+  transform: scale(4) rotate(180deg);
+}
+
+#all-button:hover ~ #frame2 {
+  fill: rgb(208, 223, 8);
+  opacity: 0.7;
+  transform: scale(3);
+}
+
+#losers-button:hover ~ #frame1 #tr-1,
+#gainers-button:hover ~ #frame1 #tr-1 {
+  transform: translateY(-10%);
+  opacity: 0;
+}
+
+#losers-button:hover ~ #frame1 #tr-2,
+#gainers-button:hover ~ #frame1 #tr-2 {
+  transform: translateY(-13%);
+  opacity: 0.5;
+}
+
+#losers-button:hover ~ #frame1 #tr-3,
+#gainers-button:hover ~ #frame1 #tr-3 {
+  transform: translateY(-10%);
+}

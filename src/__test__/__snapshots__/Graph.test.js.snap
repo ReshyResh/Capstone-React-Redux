@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Graph renders correctly 1`] = `
+Array [
+  " ",
+  <div
+    className="spinner-container"
+  >
+    <img
+      alt="loading"
+      className="spinner"
+      src="loading.gif"
+    />
+  </div>,
+  <canvas
+    data-testid="canvas"
+    height={150}
+    onClick={[Function]}
+    role="img"
+    width={300}
+  />,
+  " ",
+]
+`;

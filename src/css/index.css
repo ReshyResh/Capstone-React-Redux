@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #a12e5c;
+  font-family: 'Staatliches', cursive;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.coin-card {
+  width: auto;
+  background: #e64683;
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+  transition: all 0.5s;
+  border-radius: 5px;
+  position: sticky;
+  z-index: 99;
+}
+
+.top-card {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-details {
+  margin-left: auto;
+  position: relative;
+  bottom: 55px;
+  right: 20px;
+  font-size: 1.5em;
+}
+
+.coin-card-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-picture {
+  height: 100px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.red-bg:hover {
+  background-color: rgba(235, 45, 45, 0.589);
+}
+
+.green-bg:hover {
+  background-color: rgba(0, 255, 34, 0.527);
+}
+
+.intro {
+  height: 300px;
+  width: 97%;
+  margin: 10px auto 0 auto;
+  background: #e64683;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.intro > h1,
+h3 {
+  text-align: center;
+  z-index: 99;
+}
+
+.intro > h3 {
+  font-size: 1.5em;
+}
+
+.sort-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sort-button {
+  height: 40px;
+  z-index: 99;
+  width: 100px;
+  outline: none;
+  border: none;
+  margin: 0 10px 0 10px;
+  font-family: 'Staatliches', cursive;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: #a12e5c;
+  color: #fff;
+}
+
+.modal-body {
+  background-color: #e64683;
+  color: #fff;
+}
+
+@media only screen and (min-width: 1280px) {
+  .intro {
+    width: 99%;
+  }
+}

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 page renders correctly 1`] = `
+<div>
+  <h1
+    className="white"
+    style={
+      Object {
+        "fontSize": "5em",
+        "margin": "auto",
+        "textAlign": "center",
+      }
+    }
+  >
+     
+    Page not found!
+  </h1>
+</div>
+`;
