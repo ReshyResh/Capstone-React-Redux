@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Capstone-React-Redux/static/css/main.b32c5cc7.chunk.css",
-    "main.js": "/Capstone-React-Redux/static/js/main.20e7524f.chunk.js",
-    "main.js.map": "/Capstone-React-Redux/static/js/main.20e7524f.chunk.js.map",
+    "main.css": "/Capstone-React-Redux/static/css/main.dc8ee699.chunk.css",
+    "main.js": "/Capstone-React-Redux/static/js/main.b707a391.chunk.js",
+    "main.js.map": "/Capstone-React-Redux/static/js/main.b707a391.chunk.js.map",
     "runtime-main.js": "/Capstone-React-Redux/static/js/runtime-main.e40a9786.js",
     "runtime-main.js.map": "/Capstone-React-Redux/static/js/runtime-main.e40a9786.js.map",
     "static/js/2.1cf522c7.chunk.js": "/Capstone-React-Redux/static/js/2.1cf522c7.chunk.js",
     "static/js/2.1cf522c7.chunk.js.map": "/Capstone-React-Redux/static/js/2.1cf522c7.chunk.js.map",
     "index.html": "/Capstone-React-Redux/index.html",
-    "static/css/main.b32c5cc7.chunk.css.map": "/Capstone-React-Redux/static/css/main.b32c5cc7.chunk.css.map",
+    "static/css/main.dc8ee699.chunk.css.map": "/Capstone-React-Redux/static/css/main.dc8ee699.chunk.css.map",
     "static/js/2.1cf522c7.chunk.js.LICENSE.txt": "/Capstone-React-Redux/static/js/2.1cf522c7.chunk.js.LICENSE.txt",
     "static/media/loading.300ed672.gif": "/Capstone-React-Redux/static/media/loading.300ed672.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.e40a9786.js",
     "static/js/2.1cf522c7.chunk.js",
-    "static/css/main.b32c5cc7.chunk.css",
-    "static/js/main.20e7524f.chunk.js"
+    "static/css/main.dc8ee699.chunk.css",
+    "static/js/main.b707a391.chunk.js"
   ]
 }
