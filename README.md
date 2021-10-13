@@ -31,6 +31,9 @@ To run the website locally:
   - Run `npm install` to install dependencies.
   - Run `npm run start` to launch the live server.
 
+To run the tests:
+  - Run `npm run test`.
+
 # Authors 👤
 **Robert Baiesita**
   - Github : [@ReshyResh](https://github.com/ReshyResh/)
