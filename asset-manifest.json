@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Capstone-React-Redux/static/css/main.72a34099.chunk.css",
-    "main.js": "/Capstone-React-Redux/static/js/main.b707a391.chunk.js",
-    "main.js.map": "/Capstone-React-Redux/static/js/main.b707a391.chunk.js.map",
+    "main.js": "/Capstone-React-Redux/static/js/main.787456a2.chunk.js",
+    "main.js.map": "/Capstone-React-Redux/static/js/main.787456a2.chunk.js.map",
     "runtime-main.js": "/Capstone-React-Redux/static/js/runtime-main.e40a9786.js",
     "runtime-main.js.map": "/Capstone-React-Redux/static/js/runtime-main.e40a9786.js.map",
     "static/js/2.1cf522c7.chunk.js": "/Capstone-React-Redux/static/js/2.1cf522c7.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.e40a9786.js",
     "static/js/2.1cf522c7.chunk.js",
     "static/css/main.72a34099.chunk.css",
-    "static/js/main.b707a391.chunk.js"
+    "static/js/main.787456a2.chunk.js"
   ]
 }
